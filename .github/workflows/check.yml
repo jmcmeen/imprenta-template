@@ -1,0 +1,18 @@
+# Check: on every push and pull request, validate the content and the catalogs.
+# Nothing is rendered here, so it needs neither Chrome nor pagedjs-cli.
+name: check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv sync
+      - run: uv run imprenta check
