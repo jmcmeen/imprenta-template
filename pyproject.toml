@@ -1,10 +1,10 @@
 [project]
 name = "imprenta-template"
-version = "0.0.0"
+version = "0.1.0"   # the template release: always equal to the imprenta pin below
 description = "A content repo arranged and rendered by imprenta: start here for a new series."
 requires-python = ">=3.10"
 dependencies = [
-    "imprenta[tui]==0.1.0",   # pin the engine; bump on purpose, with the release notes open
+    "imprenta[tui]==0.1.0",   # the engine; started from imprenta-template v0.1.0. Bump on purpose, with the release notes open
 ]
 
 [dependency-groups]
