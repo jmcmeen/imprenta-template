@@ -47,7 +47,7 @@ tui = [
 
 [[package]]
 name = "imprenta-template"
-version = "0.0.0"
+version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "imprenta", extra = ["tui"] },
