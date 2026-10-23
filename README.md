@@ -1,1 +1,1 @@
-# struo-template
+# imprenta-template
